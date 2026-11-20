@@ -14,11 +14,3 @@ if (navigator.clipboard) {
     }
   });
 }
-
-for (const video of document.querySelectorAll('video')) {
-  video.addEventListener('play', () => {
-    for (const other of document.querySelectorAll('video')) {
-      if (other !== video) other.pause();
-    }
-  });
-}
