@@ -243,17 +243,18 @@
           <div id="results" class="benchmark">
             <div class="table-wrap" tabindex="0" role="region" aria-label="COCO val2017 benchmark table">
               <table>
-                <caption>COCO val2017 and pose network latency</caption>
-                <thead><tr><th scope="col">Model</th><th scope="col">AP</th><th scope="col">Latency</th></tr></thead>
+                <caption>COCO val2017</caption>
+                <thead><tr><th scope="col">Model</th><th scope="col">AP</th><th scope="col">AP<sub>50</sub></th><th scope="col">AP<sub>75</sub></th><th scope="col">AR</th></tr></thead>
                 <tbody>
-                  <tr><th scope="row">Official RTMPose-X</th><td>78.818237</td><td>3.338 ms</td></tr>
-                  <tr class="highlight-row"><th scope="row">RSN + RTMPose-X</th><td>79.124422</td><td>5.401 ms</td></tr>
+                  <tr><th scope="row">RTMPose-X (reproduced)</th><td>78.818</td><td>91.475</td><td>85.176</td><td>83.264</td></tr>
+                  <tr class="highlight-row"><th scope="row">RSN + RTMPose-X</th><td>79.124</td><td>91.586</td><td>85.652</td><td>83.492</td></tr>
+                  <tr><th scope="row">Gain (points)</th><td>+0.306</td><td>+0.111</td><td>+0.476</td><td>+0.228</td></tr>
                 </tbody>
               </table>
             </div>
             <p>The release adds a high-resolution RSN heatmap branch, pooled spatial attention, and proposal-conditioned confidence. Training uses annotations from COCO train2017 and MPII.</p>
-            <p>AP uses the full validation split, H56 person proposals, flip inference, and OKS NMS. Latency measures one batch-1 pose forward on an RTX A5000 with fused FP16 CUDA Graph execution.</p>
-            <a href="https://huggingface.co/CaiYuanhao/RSN#evaluation">Benchmark details</a>
+            <p>Both models use the full COCO val2017 split with H56 person detections, flip inference, and OKS NMS.</p>
+            <a href="https://github.com/caiyuanhao1998/RSN/tree/master/RTMPose-X#coco-val2017">Benchmark details</a>
           </div>
         </div>
 
