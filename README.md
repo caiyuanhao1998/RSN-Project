@@ -2,7 +2,7 @@
 
 Project site for the ECCV 2020 RSN paper and the RSN + RTMPose-X release. Open `index.html` locally or visit the published site. [GitHub Pages](https://caiyuanhao1998.github.io/RSN-Project/)
 
-[RSN paper](https://arxiv.org/html/2003.04030v3) · [Implementation](https://github.com/caiyuanhao1998/RSN) · [Weights](https://huggingface.co/CaiYuanhao/RSN) · [Interactive demo](https://huggingface.co/spaces/CaiYuanhao/RSN-RTMPose-X)
+[RSN paper](https://arxiv.org/html/2003.04030v3) · [Implementation](https://github.com/caiyuanhao1998/RSN) · [Weights](https://huggingface.co/CaiYuanhao/RSN) · [Interactive demo](https://huggingface.co/spaces/CaiYuanhao/RSN)
 
 ## Media credits
 
