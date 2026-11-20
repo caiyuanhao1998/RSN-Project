@@ -44,13 +44,6 @@
             </svg>
             Paper
           </a>
-          <a href="#videos">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/>
-              <path d="m10 9 5 3-5 3z" fill="currentColor"/>
-            </svg>
-            Videos
-          </a>
           <a href="coco-leaderboard-2019.html">
             <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
               <path d="M4 5v14h17M8 15v-4m5 4V8m5 7V5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
@@ -246,6 +239,22 @@
             </table>
           </div>
           <p class="caption">The RSN ensemble won the 2019 COCO Keypoint Challenge. <a href="https://arxiv.org/html/2003.04030#S4.T6">Full paper table</a></p>
+
+          <div id="results" class="benchmark">
+            <div class="table-wrap" tabindex="0" role="region" aria-label="COCO val2017 benchmark table">
+              <table>
+                <caption>COCO val2017 and pose network latency</caption>
+                <thead><tr><th scope="col">Model</th><th scope="col">AP</th><th scope="col">Latency</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Official RTMPose-X</th><td>78.818237</td><td>3.338 ms</td></tr>
+                  <tr class="highlight-row"><th scope="row">RSN + RTMPose-X</th><td>79.124422</td><td>5.401 ms</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>The release adds a high-resolution RSN heatmap branch, pooled spatial attention, and proposal-conditioned confidence. Training uses annotations from COCO train2017 and MPII.</p>
+            <p>AP uses the full validation split, H56 person proposals, flip inference, and OKS NMS. Latency measures one batch-1 pose forward on an RTX A5000 with fused FP16 CUDA Graph execution.</p>
+            <a href="https://huggingface.co/CaiYuanhao/RSN#evaluation">Benchmark details</a>
+          </div>
         </div>
 
         <div class="paper-block">
@@ -282,29 +291,6 @@
             <a href="assets/paper/visual-analysis.png"><img src="assets/paper/visual-analysis.png" alt="Input images, high-level responses, low-level heatmaps and pose predictions comparing Res2Net, DenseNet and RSN" width="1600" height="804" loading="lazy" decoding="async"></a>
             <figcaption>The paper compares feature responses, joint heatmaps and final poses on the same examples. <a href="https://arxiv.org/html/2003.04030#S4.F6">Paper figure</a></figcaption>
           </figure>
-        </div>
-      </div>
-    </section>
-
-    <section id="results" class="section section-light" aria-labelledby="results-title">
-      <div class="shell">
-        <h2 id="results-title">RSN + RTMPose-X Results</h2>
-        <div class="prose">
-          <p>The release adds a high-resolution RSN heatmap branch, pooled spatial attention, and proposal-conditioned confidence. Training uses annotations from COCO train2017 and MPII.</p>
-        </div>
-        <div class="benchmark">
-          <div class="table-wrap">
-            <table>
-              <caption>COCO val2017 and pose network latency</caption>
-              <thead><tr><th scope="col">Model</th><th scope="col">AP</th><th scope="col">Latency</th></tr></thead>
-              <tbody>
-                <tr><th scope="row">Official RTMPose-X</th><td>78.818237</td><td>3.338 ms</td></tr>
-                <tr class="highlight-row"><th scope="row">RSN + RTMPose-X</th><td>79.124422</td><td>5.401 ms</td></tr>
-              </tbody>
-            </table>
-          </div>
-          <p>AP uses the full validation split, H56 person proposals, flip inference, and OKS NMS. Latency measures one batch-1 pose forward on an RTX A5000 with fused FP16 CUDA Graph execution.</p>
-          <a href="https://huggingface.co/CaiYuanhao/RSN#evaluation">Benchmark details</a>
         </div>
       </div>
     </section>
