@@ -35,7 +35,6 @@ h1 span { color: var(--accent); }
 .authors a:hover { text-decoration: underline; }
 sup { line-height: 0; font-size: .68em; }
 .affiliations { display: flex; justify-content: center; flex-wrap: wrap; column-gap: .9em; row-gap: 2px; margin: 5px auto 2px; font-size: .99rem; }
-.contribution { font-size: .85rem; color: var(--muted); }
 .publication-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 7px; margin-top: 23px; }
 .publication-links a { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 39px; padding: 7px 16px; color: #fff; background: #353535; border-radius: 999px; text-decoration: none; font-size: .92rem; font-weight: 500; }
 .publication-links a:hover { background: #164b56; }
@@ -44,7 +43,7 @@ sup { line-height: 0; font-size: .68em; }
 h3 { font-size: clamp(1.15rem, 2.1vw, 1.35rem); line-height: 1.35; }
 .pose-group { scroll-margin-top: 16px; }
 .pose-group + .pose-group { margin-top: 30px; }
-.pose-group h2 { margin-bottom: 14px; text-align: center; }
+.pose-group h2 { margin-bottom: 22px; text-align: center; }
 .gallery { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 14px; }
 .gallery video { width: 100%; height: auto; aspect-ratio: 16/9; background: #181818; border-radius: 5px; }
 .gallery figcaption { padding-top: 8px; text-align: center; font-size: .89rem; }
@@ -63,6 +62,10 @@ h3 { font-size: clamp(1.15rem, 2.1vw, 1.35rem); line-height: 1.35; }
 .table-wrap { width: 100%; overflow-x: auto; }
 .paper-table { min-width: 518px; }
 .mpii-table { min-width: 660px; }
+.leaderboard-page { padding-bottom: 42px; }
+.leaderboard-table { min-width: 700px; }
+.leaderboard-table tr > :first-child { text-align: center; }
+.leaderboard-table th:nth-child(2) { text-align: left; }
 table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
 caption { text-align: left; margin-bottom: 9px; font-weight: 600; }
 th, td { text-align: right; padding: 12px 9px; border-bottom: 1px solid var(--line); }
@@ -99,7 +102,7 @@ footer { border-top: 1px solid var(--line); background: var(--light); padding: 2
   .authors { font-size: 1rem; line-height: 1.65; }
   .affiliations { font-size: .85rem; column-gap: .62em; }
   .publication-links { margin-top: 17px; gap: 6px; }
-  .publication-links a { min-height: 37px; padding-inline: 12px; font-size: .88rem; }
+  .publication-links a { min-height: 37px; padding-inline: 10px; font-size: .88rem; }
   .gallery { grid-template-columns: 1fr; gap: 16px; }
   .gallery.awards { gap: 8px; }
   .awards img { padding: 3px; }
