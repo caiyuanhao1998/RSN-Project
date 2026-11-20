@@ -39,17 +39,15 @@ sup { line-height: 0; font-size: .68em; }
 .publication-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 7px; margin-top: 23px; }
 .publication-links a { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 39px; padding: 7px 16px; color: #fff; background: #353535; border-radius: 999px; text-decoration: none; font-size: .92rem; font-weight: 500; }
 .publication-links a:hover { background: #164b56; }
+.publication-links svg, .publication-links img { flex: 0 0 18px; width: 18px; height: 18px; object-fit: contain; }
 .media-section { padding: 14px 0 40px; }
-.media-section h2 { margin-bottom: 8px; }
-.media-intro { color: var(--muted); }
 h3 { font-size: clamp(1.15rem, 2.1vw, 1.35rem); line-height: 1.35; }
-.pose-group { margin-top: 21px; scroll-margin-top: 14px; }
-.pose-group + .pose-group { margin-top: 24px; }
-.pose-group h3 { margin-bottom: 12px; }
+.pose-group { scroll-margin-top: 16px; }
+.pose-group + .pose-group { margin-top: 30px; }
+.pose-group h2 { margin-bottom: 14px; text-align: center; }
 .gallery { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 14px; }
 .gallery video { width: 100%; height: auto; aspect-ratio: 16/9; background: #181818; border-radius: 5px; }
-.gallery figcaption { display: flex; align-items: baseline; justify-content: space-between; gap: 7px; padding: 8px 0 0; font-size: .89rem; }
-.gallery figcaption a { font-size: .84rem; }
+.gallery figcaption { padding-top: 8px; text-align: center; font-size: .89rem; }
 .media-caption { margin-top: 16px; font-size: .93rem; color: var(--muted); }
 .section { padding-block: 42px; scroll-margin-top: 12px; }
 .section h2 { text-align: center; margin-bottom: 18px; }
@@ -72,8 +70,8 @@ th:first-child { text-align: left; }
 thead th { color: var(--muted); border-top: 1px solid var(--line); font-size: .9rem; }
 .highlight-row { background: #edf5f6; font-weight: 700; }
 .benchmark p { margin: 13px 0 6px; font-size: .91rem; color: var(--muted); }
-.awards { gap: 16px; }
-.awards figure { text-align: center; }
+#awards { padding-block: 12px 22px; }
+.gallery.awards { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
 .awards img { width: 100%; aspect-ratio: 4/3; object-fit: contain; padding: 9px; border: 1px solid var(--line); border-radius: 5px; background: #fff; }
 .awards figcaption { display: grid; gap: 4px; justify-content: center; }
 .awards figcaption span { color: var(--muted); font-size: .86rem; }
@@ -103,6 +101,8 @@ footer { border-top: 1px solid var(--line); background: var(--light); padding: 2
   .publication-links { margin-top: 17px; gap: 6px; }
   .publication-links a { min-height: 37px; padding-inline: 12px; font-size: .88rem; }
   .gallery { grid-template-columns: 1fr; gap: 16px; }
+  .gallery.awards { gap: 8px; }
+  .awards img { padding: 3px; }
   .media-section { padding-bottom: 28px; }
   .section { padding-block: 28px; }
   th, td { font-size: .875rem; padding-inline: 6px; }

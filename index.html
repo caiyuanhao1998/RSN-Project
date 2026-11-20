@@ -8,7 +8,7 @@
   <meta property="og:description" content="The ECCV 2020 paper and our RSN + RTMPose-X release.">
   <meta property="og:image" content="https://caiyuanhao1998.github.io/RSN-Project/assets/basketball.jpg">
   <title>RSN | Multi-Person Pose Estimation</title>
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
   <script src="page.js" defer></script>
 </head>
 <body>
@@ -39,23 +39,66 @@
         </p>
         <p class="contribution"><sup>*</sup> Equal contribution</p>
         <nav class="publication-links" aria-label="Project resources">
-          <a href="https://arxiv.org/pdf/2003.04030">Paper</a>
-          <a href="#videos">Videos</a>
-          <a href="#paper-results">Paper Results</a>
-          <a href="https://github.com/caiyuanhao1998/RSN">Code</a>
-          <a href="https://huggingface.co/CaiYuanhao/RSN"><img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="" width="19" height="18"> Model</a>
-          <a href="https://huggingface.co/spaces/CaiYuanhao/RSN-RTMPose-X"><img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="" width="19" height="18"> Online Demo</a>
-          <a href="https://github.com/caiyuanhao1998/RSN/blob/master/RTMPose-X/TRAINING.md">Training</a>
+          <a href="https://arxiv.org/pdf/2003.04030">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M6 3h8l4 4v14H6zm8 0v5h4M9 12h6m-6 4h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Paper
+          </a>
+          <a href="#videos">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/>
+              <path d="m10 9 5 3-5 3z" fill="currentColor"/>
+            </svg>
+            Videos
+          </a>
+          <a href="#paper-results">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M4 5v14h17M8 15v-4m5 4V8m5 7V5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Paper Results
+          </a>
+          <a href="https://github.com/caiyuanhao1998/RSN">
+            <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+              <path d="M6.766 11.328c-2.063-.25-3.516-1.734-3.516-3.656 0-.781.281-1.625.75-2.188-.203-.515-.172-1.609.063-2.062.625-.078 1.468.25 1.968.703.594-.187 1.219-.281 1.985-.281.765 0 1.39.094 1.953.265.484-.437 1.344-.765 1.969-.687.218.422.25 1.515.046 2.047.5.593.766 1.39.766 2.203 0 1.922-1.453 3.375-3.547 3.64.531.344.89 1.094.89 1.954v1.625c0 .468.391.734.86.547C13.781 14.359 16 11.53 16 8.03 16 3.61 12.406 0 7.984 0 3.563 0 0 3.61 0 8.031a7.88 7.88 0 0 0 5.172 7.422c.422.156.828-.125.828-.547v-1.25c-.219.094-.5.156-.75.156-1.031 0-1.64-.562-2.078-1.609-.172-.422-.36-.672-.719-.719-.187-.015-.25-.093-.25-.187 0-.188.313-.328.625-.328.453 0 .844.281 1.25.86.313.452.64.655 1.031.655s.641-.14 1-.5c.266-.265.47-.5.657-.656" fill="currentColor"/>
+            </svg>
+            Code
+          </a>
+          <a href="https://huggingface.co/CaiYuanhao/RSN">
+            <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="" width="19" height="18">
+            Model
+          </a>
+          <a href="https://huggingface.co/spaces/CaiYuanhao/RSN-RTMPose-X">
+            <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="" width="19" height="18">
+            Online Demo
+          </a>
         </nav>
       </div>
     </header>
 
-    <section id="videos" class="shell media-section" aria-labelledby="gallery-title">
-      <h2 id="gallery-title">Sports Pose Estimation</h2>
-      <p class="media-intro">The released RSN + RTMPose-X model predicts 17 COCO keypoints per person from YOLOX-S detections.</p>
+    <section id="awards" class="section" aria-labelledby="awards-title">
+      <div class="shell">
+        <h2 id="awards-title">Challenge Certificates</h2>
+        <div class="gallery awards">
+          <figure>
+            <a href="assets/2019_winner.png"><img src="assets/2019_winner.png" loading="lazy" alt="Megvii first place certificate, COCO Keypoints Challenge, ICCV 2019"></a>
+            <figcaption><strong>First place</strong><span>COCO Keypoints Challenge · ICCV 2019</span></figcaption>
+          </figure>
+          <figure>
+            <a href="assets/2019_best_paper.png"><img src="assets/2019_best_paper.png" loading="lazy" alt="Megvii Best Paper certificate, COCO and Mapillary Challenge, ICCV 2019"></a>
+            <figcaption><strong>Best Paper</strong><span>COCO + Mapillary Challenge · ICCV 2019</span></figcaption>
+          </figure>
+          <figure>
+            <a href="assets/2020_winner.png"><img src="assets/2020_winner.png" loading="lazy" alt="XForwardAI first place certificate, COCO and LVIS Keypoint Detection Challenge, ECCV 2020"></a>
+            <figcaption><strong>First place</strong><span>COCO + LVIS Keypoint Detection Challenge · ECCV 2020</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
 
+    <section id="videos" class="shell media-section" aria-label="Pose estimation videos">
       <div class="pose-group" id="single-person">
-        <h3>Single-Person Pose Estimation</h3>
+        <h2>Single-Person Pose Estimation</h2>
         <div class="gallery">
           <figure>
             <video controls playsinline muted loop preload="none" width="960" height="540"
@@ -63,7 +106,7 @@
               <source src="assets/sports/tennis-serve.mp4" type="video/mp4">
               <a href="assets/sports/tennis-serve.mp4">Download tennis serve video</a>
             </video>
-            <figcaption><strong>Tennis Serve</strong><a href="https://www.dvidshub.net/video/849373/republic-korea-and-japanese-sailors-compete-tennis-tournament-rimpac-2022">Footage credit</a></figcaption>
+            <figcaption><strong>Tennis Serve</strong></figcaption>
           </figure>
           <figure>
             <video controls playsinline muted loop preload="none" width="960" height="540"
@@ -71,7 +114,7 @@
               <source src="assets/sports/golf-swing.mp4" type="video/mp4">
               <a href="assets/sports/golf-swing.mp4">Download golf swing video</a>
             </video>
-            <figcaption><strong>Golf Swing</strong><a href="https://www.dvidshub.net/video/330334/kaneohe-klipper-golf-course">Footage credit</a></figcaption>
+            <figcaption><strong>Golf Swing</strong></figcaption>
           </figure>
           <figure>
             <video controls playsinline muted loop preload="none" width="960" height="540"
@@ -79,13 +122,13 @@
               <source src="assets/sports/kettlebell.mp4" type="video/mp4">
               <a href="assets/sports/kettlebell.mp4">Download kettlebell swing video</a>
             </video>
-            <figcaption><strong>Kettlebell Swing</strong><a href="https://www.dvidshub.net/video/754731/kettlebell-swing">Footage credit</a></figcaption>
+            <figcaption><strong>Kettlebell Swing</strong></figcaption>
           </figure>
         </div>
       </div>
 
       <div class="pose-group" id="multi-person">
-        <h3>Multi-Person Pose Estimation</h3>
+        <h2>Multi-Person Pose Estimation</h2>
         <div class="gallery">
           <figure>
             <video controls playsinline muted loop preload="none" width="960" height="540"
@@ -93,7 +136,7 @@
               <source src="assets/basketball.mp4" type="video/mp4">
               <a href="assets/basketball.mp4">Download basketball video</a>
             </video>
-            <figcaption><strong>Basketball</strong><a href="https://www.dvidshub.net/video/989713/nsf-diego-garcia-hosts-basketball-game">Footage credit</a></figcaption>
+            <figcaption><strong>Basketball</strong></figcaption>
           </figure>
           <figure>
             <video controls playsinline muted loop preload="none" width="960" height="540"
@@ -101,7 +144,7 @@
               <source src="assets/volleyball.mp4?v=ae454320d1ae" type="video/mp4">
               <a href="assets/volleyball.mp4?v=ae454320d1ae">Download volleyball video</a>
             </video>
-            <figcaption><strong>Volleyball</strong><a href="https://www.dvidshub.net/video/967191/katusa-friendship-week-volleyball-ssireum-competition-b-roll">Footage credit</a></figcaption>
+            <figcaption><strong>Volleyball</strong></figcaption>
           </figure>
           <figure>
             <video controls playsinline muted loop preload="none" width="960" height="540"
@@ -109,7 +152,7 @@
               <source src="assets/soccer.mp4" type="video/mp4">
               <a href="assets/soccer.mp4">Download soccer video</a>
             </video>
-            <figcaption><strong>Soccer</strong><a href="https://www.dvidshub.net/video/972336/us-armed-forces-army-vs-air-force-soccer-tournament">Footage credit</a></figcaption>
+            <figcaption><strong>Soccer</strong></figcaption>
           </figure>
           <figure>
             <video controls playsinline muted loop preload="none" width="960" height="540"
@@ -117,7 +160,7 @@
               <source src="assets/sports/pickleball.mp4" type="video/mp4">
               <a href="assets/sports/pickleball.mp4">Download pickleball doubles video</a>
             </video>
-            <figcaption><strong>Pickleball Doubles</strong><a href="https://www.dvidshub.net/video/944593/marne-week-2024-pickleball-b-roll-3rd-cab-vs-92-eng-bn">Footage credit</a></figcaption>
+            <figcaption><strong>Pickleball Doubles</strong></figcaption>
           </figure>
           <figure>
             <video controls playsinline muted loop preload="none" width="960" height="540"
@@ -125,7 +168,7 @@
               <source src="assets/sports/flag-football.mp4" type="video/mp4">
               <a href="assets/sports/flag-football.mp4">Download flag football video</a>
             </video>
-            <figcaption><strong>Flag Football</strong><a href="https://www.dvidshub.net/video/963060/us-uk-french-militaries-compete-flag-football-tournament-2025-b-roll">Footage credit</a></figcaption>
+            <figcaption><strong>Flag Football</strong></figcaption>
           </figure>
           <figure>
             <video controls playsinline muted loop preload="none" width="960" height="540"
@@ -133,7 +176,7 @@
               <source src="assets/sports/track-racing.mp4" type="video/mp4">
               <a href="assets/sports/track-racing.mp4">Download track racing video</a>
             </video>
-            <figcaption><strong>Track Racing</strong><a href="https://www.dvidshub.net/video/426624/us-track-and-field">Footage credit</a></figcaption>
+            <figcaption><strong>Track Racing</strong></figcaption>
           </figure>
         </div>
       </div>
@@ -263,26 +306,6 @@
           </div>
           <p>AP uses the full validation split, H56 person proposals, flip inference, and OKS NMS. Latency measures one batch-1 pose forward on an RTX A5000 with fused FP16 CUDA Graph execution.</p>
           <a href="https://huggingface.co/CaiYuanhao/RSN#evaluation">Benchmark details</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="awards" class="section" aria-labelledby="awards-title">
-      <div class="shell">
-        <h2 id="awards-title">Challenge Certificates</h2>
-        <div class="gallery awards">
-          <figure>
-            <a href="assets/2019_winner.png"><img src="assets/2019_winner.png" loading="lazy" alt="Megvii first place certificate, COCO Keypoints Challenge, ICCV 2019"></a>
-            <figcaption><strong>First place</strong><span>COCO Keypoints Challenge · ICCV 2019</span></figcaption>
-          </figure>
-          <figure>
-            <a href="assets/2019_best_paper.png"><img src="assets/2019_best_paper.png" loading="lazy" alt="Megvii Best Paper certificate, COCO and Mapillary Challenge, ICCV 2019"></a>
-            <figcaption><strong>Best Paper</strong><span>COCO + Mapillary Challenge · ICCV 2019</span></figcaption>
-          </figure>
-          <figure>
-            <a href="assets/2020_winner.png"><img src="assets/2020_winner.png" loading="lazy" alt="XForwardAI first place certificate, COCO and LVIS Keypoint Detection Challenge, ECCV 2020"></a>
-            <figcaption><strong>First place</strong><span>COCO + LVIS Keypoint Detection Challenge · ECCV 2020</span></figcaption>
-          </figure>
         </div>
       </div>
     </section>
